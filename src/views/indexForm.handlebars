@@ -1,0 +1,60 @@
+<br>
+<div class="container-fluid">
+    <div class="container-fluid bg-green d-flex justify-content-between align-items-center px-4">
+        <h1 class="text-success mt-8">Bienvenido {{this.username}}</h1>
+        <button id='logout' type="submit" class="btn btn-warning">Desloguear</button>
+    </div>
+</div><br>
+<div class="container-fluid">
+    <div class="container-fluid bg-gris px-4">
+        <br>
+        <h1 class="text-primary">Ingrese Producto</h1>
+        <form id="formProduct">
+            <h5 class="fst-italic">Nombre</h5>
+            <input type="text" id="title" class="form-label"> 
+            <h5 class="fst-italic">Precio</h5>
+            <input type="text" id="price" class="form-label">
+            <h5 class="fst-italic">Foto URL</h5>
+            <input type="text" id="thumbnail" class="form-label">
+            <br>
+            <br>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+        <br>
+        <hr>
+        <h2 class="text-danger">Lista de Productos</h2>
+        <div id="tableProducts"></div>
+       
+        <br>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="container-fluid bg-gris px-4">
+        <br>
+        <h1 class="text-primary">Centro de Mensajes</h1>
+        <h1 class="text-primary" id="compr"></h1>
+        <br>
+        <form id="formChat">
+            <input type="text" id="email" class="form-label" placeholder="Ingresá un email...">            
+            <br>
+            <input type="text" id="nombre" class="form-label" placeholder="Ingresá tu nombre...">
+            <br>
+            <input type="text" id="apellido" class="form-label" placeholder="Ingresá tu apellido...">
+            <br>
+            <input type="text" id="edad" class="form-label" placeholder="Ingresá tu edad...">
+            <br>
+            <input type="text" id="alias" class="form-label" placeholder="Ingresá tu alias...">
+            <br>
+            <input type="text" id="avatar" class="form-label" placeholder="Ingresá tu avatar...">
+            <hr>
+            <div id="messages"></div>
+            <br>
+            <input type="text" id="message" class="form-label" placeholder="Ingresá un mensaje...">
+            <input type="submit" class="btn btn-primary" value="Enviar!">
+        </form>
+        <br>
+        <br>
+    </div> 
+</div>
+{{!-- <script src="index.js"></script> --}}
